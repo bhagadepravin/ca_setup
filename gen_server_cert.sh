@@ -35,6 +35,10 @@ openssl genrsa -out intermediate/private/${host}.key.pem 2048
 
 openssl req -config ${cnf} -batch -key intermediate/private/${host}.key.pem -new -sha256 -out intermediate/csr/${host}.csr.pem
 
+# Add ${host} with the next available number in the [alt_names] section
+next_dns_number=$(awk '/^\[ alt_names \]/{flag=1;next}/^\[/{flag=0}flag{count++}END{print count+1}' intermediate/openssl.cnf)
+sed -i "/^\[ alt_names \]/a DNS.${next_dns_number} = \"${host}\"" intermediate/openssl.cnf
+
 openssl ca -config intermediate/openssl.cnf -extensions v3_req -extensions server_cert \
   -days 375 -notext -md sha256 -in intermediate/csr/${host}.csr.pem \
   -passin file:passfile \
