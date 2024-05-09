@@ -23,8 +23,7 @@ utf8 = yes
 C = US
 ST=LA
 L=PA
-O=SUPPORT
-OU=ACCELDATA
+O=ACCELDATA
 CN = ${host}
 " > cnf/${host}.cnf
   cnf="cnf/${host}.cnf"
