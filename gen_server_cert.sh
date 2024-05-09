@@ -39,5 +39,3 @@ openssl ca -config intermediate/openssl.cnf -extensions v3_req \
   -days 375 -notext -md sha256 -in intermediate/csr/${host}.csr.pem \
   -passin file:passfile \
   -out intermediate/certs/${host}.cert.pem
-
-ll intermediate/certs/*
