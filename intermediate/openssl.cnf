@@ -112,6 +112,12 @@ subjectKeyIdentifier = hash
 authorityKeyIdentifier = keyid,issuer:always
 keyUsage = critical, digitalSignature, keyEncipherment
 extendedKeyUsage = serverAuth, clientAuth
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = "ambari007-ha.adsre.com"
+DNS.2 = "*.adsre.com"
+DNS.3 = "secure.nifi"
 
 [ v3_req ]
 basicConstraints = CA:FALSE
