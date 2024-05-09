@@ -43,7 +43,6 @@ unique_subject    = no
 countryName             = match
 stateOrProvinceName     = match
 organizationName        = match
-organizationalUnitName  = optional
 commonName              = supplied
 emailAddress            = optional
 
@@ -54,7 +53,6 @@ countryName             = optional
 stateOrProvinceName     = optional
 localityName            = optional
 organizationName        = optional
-organizationalUnitName  = optional
 commonName              = supplied
 emailAddress            = optional
 
@@ -76,7 +74,6 @@ countryName                     = Country Name (2 letter code)
 stateOrProvinceName             = State or Province Name
 localityName                    = Locality Name
 0.organizationName              = Organization Name
-organizationName                = Organization Name
 commonName                      = Common Name
 
 # Optionally, specify some defaults.
@@ -84,7 +81,6 @@ countryName_default             = US
 stateOrProvinceName_default     = LA
 localityName_default            = PA
 0.organizationName_default      = ACCELDATA
-organizationalUnitName_default  = SUPPORT
 commonName_default              = Intermediate CA
 
 [ v3_ca ]
