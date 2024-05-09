@@ -22,6 +22,7 @@ utf8 = yes
 [ dn ]
 C = US
 ST=LA
+L=PA
 O=SUPPORT
 OU=ACCELDATA
 CN = ${host}
