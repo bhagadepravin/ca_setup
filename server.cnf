@@ -23,8 +23,8 @@ emailAddress                    = pravin@acceldata.io
 countryName_default             = US
 stateOrProvinceName_default     = LA
 localityName_default            = PA
-0.organizationName_default      = ACCELDATA
-organizationalUnitName_default  = ORG
+0.organizationName_default      = SUPPORT
+organizationalUnitName_default  = ACCELDATA
 commonName_default              = ambari007-ha.adsre.com
 emailAddress_default            = pravin@acceldata.io
 
