@@ -33,9 +33,9 @@ echo "Using ${cnf} as config file"
 
 openssl genrsa -out intermediate/private/${host}.key.pem 2048
 
-openssl req -config ${cnf} -extensions server_cert -batch -key intermediate/private/${host}.key.pem -new -sha256 -out intermediate/csr/${host}.csr.pem
+openssl req -config ${cnf} -batch -key intermediate/private/${host}.key.pem -new -sha256 -out intermediate/csr/${host}.csr.pem
 
-openssl ca -config intermediate/openssl.cnf -extensions v3_req \
+openssl ca -config intermediate/openssl.cnf -extensions v3_req -extensions server_cert \
   -days 375 -notext -md sha256 -in intermediate/csr/${host}.csr.pem \
   -passin file:passfile \
   -out intermediate/certs/${host}.cert.pem
