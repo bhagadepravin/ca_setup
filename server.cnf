@@ -16,7 +16,6 @@ countryName                     = Country Name (2 letter code)
 stateOrProvinceName             = State or Province Name
 localityName                    = Locality Name
 organizationName                = Organization Name
-organizationalUnitName          = ACCELDATA
 commonName                      = ambari007-ha.adsre.com
 emailAddress                    = pravin@acceldata.io
 
@@ -24,8 +23,7 @@ emailAddress                    = pravin@acceldata.io
 countryName_default             = US
 stateOrProvinceName_default     = LA
 localityName_default            = PA
-0.organizationName_default      = SUPPORT
-organizationalUnitName_default  = ACCELDATA
+0.organizationName_default      = ACCELDATA
 commonName_default              = ambari007-ha.adsre.com
 emailAddress_default            = pravin@acceldata.io
 
