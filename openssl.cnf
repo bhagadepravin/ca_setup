@@ -41,7 +41,7 @@ policy            = policy_strict
 countryName             = match
 stateOrProvinceName     = match
 organizationName        = match
-organizationalUnitName  = optional
+organizationalUnitName  = match
 commonName              = supplied
 emailAddress            = optional
 
