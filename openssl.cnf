@@ -82,7 +82,7 @@ countryName_default             = US
 stateOrProvinceName_default     = LA
 localityName_default            = PA
 0.organizationName_default      = SUPPORT
-organizationalUnitName_default  = ORG
+organizationalUnitName_default  = ACCELDATA
 commonName_default              = Root CA
 
 [ v3_ca ]
