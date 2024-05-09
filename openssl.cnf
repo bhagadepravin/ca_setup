@@ -41,7 +41,7 @@ policy            = policy_strict
 countryName             = match
 stateOrProvinceName     = match
 organizationName        = match
-organizationalUnitName  = match
+organizationalUnitName  = optional
 commonName              = supplied
 emailAddress            = optional
 
@@ -81,8 +81,8 @@ commonName                      = Common Name
 countryName_default             = US
 stateOrProvinceName_default     = LA
 localityName_default            = PA
-0.organizationName_default      = SUPPORT
-organizationalUnitName_default  = ACCELDATA
+0.organizationName_default      = ACCELDATA
+organizationalUnitName_default  = SUPPORT
 commonName_default              = Root CA
 
 [ v3_ca ]
