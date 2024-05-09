@@ -34,5 +34,6 @@ keyUsage = digitalSignature, keyEncipherment
 subjectAltName = @alt_names
 
 [ alt_names ]
-DNS.1 = "api.local1.intern"
+DNS.1 = "ambari007-ha.adsre.com"
+DNS.2 = "*.adsre.com"
 
