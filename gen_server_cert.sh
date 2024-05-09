@@ -20,8 +20,10 @@ distinguished_name = dn
 utf8 = yes
 
 [ dn ]
-C = NO
-O = My Org
+C = US
+ST=LA
+O=SUPPORT
+OU=ACCELDATA
 CN = ${host}
 " > cnf/${host}.cnf
   cnf="cnf/${host}.cnf"
