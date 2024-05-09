@@ -43,7 +43,7 @@ unique_subject    = no
 countryName             = match
 stateOrProvinceName     = match
 organizationName        = match
-organizationalUnitName  = optional
+organizationalUnitName  = match
 commonName              = supplied
 emailAddress            = optional
 
