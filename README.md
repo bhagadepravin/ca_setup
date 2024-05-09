@@ -7,11 +7,11 @@ This code sets up a simple Certificate Authority (CA) for generating SSL/TLS cer
 3. It generates a server certificate for the current machine (identified by `hostname -f`) using `gen_server_cert.sh`. This script generates a private key, a certificate signing request (CSR), and then signs the CSR to create the server certificate.
 4. Finally, it exports the generated certificate and its private key to the specified destination folder (`/home` in this case) using `export.sh`. If the `-k` option is provided, it also exports the private key.
 
-```
+```bash
 echo "Welcome" > passfile
-./bootstrap.sh
+bash bootstrap.sh
 
-./create_cachain.sh
-./gen_server_cert.sh `hostname -f`
-./export.sh -i intermediate -c `hostname -f` -d /home -k
+bash create_cachain.sh
+bash gen_server_cert.sh `hostname -f`
+bahs export.sh -i intermediate -c `hostname -f` -d /home -k
 ```
