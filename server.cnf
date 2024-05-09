@@ -12,10 +12,21 @@ req_extensions          = v3_req
 email_in_dn             = no
 
 [ req_distinguished_name ]
-countryName                     = NO
-organizationName                = UH-IaaS
-commonName                      = dashboard.local1.intern
-emailAddress                    = raymond@uib.no
+countryName                     = Country Name (2 letter code)
+stateOrProvinceName             = State or Province Name
+localityName                    = Locality Name
+organizationName                = Organization Name
+commonName                      = ambari007-ha.adsre.com
+emailAddress                    = pravin@acceldata.io
+
+# Optionally, specify some defaults.
+countryName_default             = US
+stateOrProvinceName_default     = LA
+localityName_default            = PA
+0.organizationName_default      = ACCELDATA
+organizationalUnitName_default  = ORG
+commonName_default              = ambari007-ha.adsre.com
+emailAddress_default            = pravin@acceldata.io
 
 [ v3_req ]
 basicConstraints = CA:FALSE
