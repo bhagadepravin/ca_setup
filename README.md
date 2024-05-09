@@ -13,5 +13,5 @@ bash bootstrap.sh
 
 bash create_cachain.sh
 bash gen_server_cert.sh `hostname -f`
-bahs export.sh -i intermediate -c `hostname -f` -d /home -k
+bash export.sh -i intermediate -c `hostname -f` -d /home -k
 ```
